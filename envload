@@ -1,0 +1,3 @@
+#!/bin/bash
+export $(grep -v '^#' my-chatbot-app/.env | xargs)
+

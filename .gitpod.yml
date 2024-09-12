@@ -1,13 +1,16 @@
 tasks:
-  - name: init
+  - name: Init and Start Services
     before: |
-      cd my-chatbot-app 
-      npm i
+      cd my-chatbot-app
+      npm install
       cd ..
       ./envload
       python -m pip install aider-chat
+    command: |
+      cd my-chatbot-app
+      npm start
 ports: 
-  - name: react 
+  - name: react
     port: 3000
     onOpen: open-browser
-    visibility: public
+    visibility: public  

@@ -2,13 +2,14 @@
   "name": "web-application-using-genai",
   "version": "1.0.0",
   "description": "A web application that integrates with GenAI to provide advanced AI-driven features and capabilities.",
-  "main": "index.js",  
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js" 
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
     "node-ovsx-sign": "^1.0.0"
   }
 }
